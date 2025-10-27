@@ -148,7 +148,14 @@
   color: #f1f1fb !important;
 }
 
-/* Minimap Blur */
-.editor-widget.minimap {
-  filter: blur(3px);
+/* This targets the minimap-slider element (the actual content area of the minimap) */
+.monaco-workbench:has(#command-blur) .minimap-slider {
+  backdrop-filter: blur(3px) !important; /* Adjust blur strength as needed */
+}
+
+/* You might also need to target the parent container if minimap-slider doesn't show the blur correctly */
+.monaco-workbench:has(#command-blur) .editor-widget.minimap {
+  backdrop-filter: blur(
+    3px
+  ) !important; /* Redundant if minimap-slider works, but good to have */
 }
