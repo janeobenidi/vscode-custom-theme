@@ -151,7 +151,7 @@
 /* This targets the minimap-slider element (the actual content area of the minimap) */
 .monaco-workbench:has(#command-blur) .minimap-slider,
 .monaco-workbench:has(#command-blur) .editor-widget.minimap,
-.monaco-workbench:has(#command-blur) .minimap-viewport,
+.monaco-workbench:has(#command-blur) .minimap-viewport, 
 .monaco-workbench:has(#command-blur) .minimap.canvas,
 .monaco-workbench:has(#command-blur) .minimap-decorations-layer { /* Including the decorations layer, just in case */
   backdrop-filter: blur(3px) !important; /* Adjust blur strength as needed */
