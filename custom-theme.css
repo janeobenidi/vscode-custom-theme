@@ -146,3 +146,8 @@
 .monaco-inputbox input {
   color: #f1f1fb !important;
 }
+
+/* Minimap Blur */
+.editor-widget.minimap {
+  filter: blur(3px);
+}
